@@ -1,6 +1,15 @@
 <template>
-  <button class="btn" :class="{ Btype }">
-    <slot></slot>
+  <button
+    :class="[
+      'lkbtn',
+      type,
+      {
+        circle: Bcircle,
+      },
+    ]"
+  >
+    <span><slot></slot></span>
+    <slot name="add"></slot>
   </button>
 </template>
 <script>
@@ -12,27 +21,20 @@ export default {
       type: String,
       default: "",
     },
+    circle: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup(props) {
     const Btype = ref(props.type);
+    const Bcircle = ref(props.circle);
 
     return {
       Btype,
+      Bcircle,
     };
   },
 };
 </script>
-<style scoped>
-.btn {
-  border: 1px solid var(--border);
-  border-radius: 0.3rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--white);
-  cursor: pointer;
-}
-
-.btn:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-</style>
+<style scoped></style>

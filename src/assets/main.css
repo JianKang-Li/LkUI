@@ -1,3 +1,5 @@
+@import "./button.css";
+
 body,
 html {
   font-size: 16px;
@@ -9,4 +11,6 @@ html {
   --bg: #eee;
   --blcak: #000000;
   --border: #aaa;
+  --danger: #f56c6c;
+  --success: #67c23a;
 }

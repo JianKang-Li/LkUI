@@ -1,0 +1,34 @@
+.lkbtn {
+  border: 1px solid var(--border);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--white);
+  cursor: pointer;
+  text-align: center;
+}
+
+.lkbtn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.lkbtn.danger:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.lkbtn.success:hover {
+  color: var(--success);
+  border-color: var(--success);
+}
+
+.lkbtn.circle {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.lkbtn+.lkbtn {
+  margin-left: 0.5rem;
+}
