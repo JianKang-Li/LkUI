@@ -1,24 +1,24 @@
 .lkbtn {
-  border: 1px solid var(--border);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 0.3rem;
   padding: 0.5rem 1rem;
-  background-color: var(--white);
+  color: var(--white);
   cursor: pointer;
   text-align: center;
 }
 
 .lkbtn:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  opacity: 0.8;
 }
 
-.lkbtn.danger:hover {
-  color: var(--danger);
+.lkbtn.danger {
+  background-color: var(--danger);
   border-color: var(--danger);
 }
 
-.lkbtn.success:hover {
-  color: var(--success);
+.lkbtn.success {
+  background-color: var(--success);
   border-color: var(--success);
 }
 
@@ -27,6 +27,12 @@
   height: 2rem;
   padding: 0.5rem;
   border-radius: 50%;
+}
+
+.lkbtn.plain {
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--border);
 }
 
 .lkbtn+.lkbtn {

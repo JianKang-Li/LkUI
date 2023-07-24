@@ -6,6 +6,9 @@
       {
         circle: Bcircle,
       },
+      {
+        plain: Bplain
+      }
     ]"
   >
     <span><slot></slot></span>
@@ -25,14 +28,20 @@ export default {
       type: Boolean,
       default: false,
     },
+    plain: {
+      type: Boolean,
+      default: false
+    }
   },
   setup(props) {
     const Btype = ref(props.type);
     const Bcircle = ref(props.circle);
+    const Bplain = ref(props.plain)
 
     return {
       Btype,
       Bcircle,
+      Bplain
     };
   },
 };

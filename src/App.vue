@@ -5,7 +5,9 @@
   <LkButton type="success"
     >success <template #add><span>rpx</span></template></LkButton
   >
-
+  <LkButton type="success" plain
+    >success <template #add><span>rpx</span></template></LkButton
+  >
   <LkButton circle @click="handleCilck">1</LkButton>
 </template>
 <script>
