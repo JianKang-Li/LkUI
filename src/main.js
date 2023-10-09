@@ -3,9 +3,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import LkButton from "./components/LkButton"
+import LkRadio from "./components/LkRadio"
 
 const components = [
-  LkButton
+  LkButton,
+  LkRadio
 ]
 
 const app = createApp(App)

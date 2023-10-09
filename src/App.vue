@@ -1,25 +1,21 @@
 <template>
-  <h1>Welecome to LkUI</h1>
-  <LkButton>primary</LkButton>
-  <LkButton type="danger">danger</LkButton>
-  <LkButton type="success"
-    >success <template #add><span>rpx</span></template></LkButton
-  >
-  <LkButton type="success" plain
-    >success <template #add><span>rpx</span></template></LkButton
-  >
-  <LkButton circle @click="handleCilck">1</LkButton>
+  <LkRadio :options="options"></LkRadio>
 </template>
 <script>
 export default {
   setup() {
-    const handleCilck = (e) => {
-      console.log(e.target);
-    };
+    const options = [{
+      value:1,
+      label: 1
+    },
+    {
+      value:2,
+      label: 2
+    }]
 
     return {
-      handleCilck,
-    };
+      options
+    }
   },
 };
 </script>
